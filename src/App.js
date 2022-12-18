@@ -3,6 +3,7 @@ import './App.css';
 import { BsListCheck} from 'react-icons/bs';
 import {AiOutlineGift } from 'react-icons/ai';
 import {AiOutlineMenu } from 'react-icons/ai';
+import img from './acc/my port.jpg'
 
 function App() {
   return (
@@ -14,30 +15,43 @@ function App() {
   <h2 > Home</h2></div>
   <div className='grid grid-cols-3 md:gap-3 gap-[406px] justify-center overflow-y-hidden bg-white p-4'>
   <div className="card w-96 bg-gradient-to-r from-purple-900 to-purple-300 shadow-xl">
-  <div className="card-body">
+  <div className="card-body flex-row">
+    <div>
     <h2 className="card-title">Daily Reward</h2>
     <p>Log in daily to claim free coins!</p>
     <h3 className='bg-purple-600 w-24 '>CLAIM PRIZE</h3>
+    </div>
+
     <div className="card-actions justify-end">
       <button className="btn btn-primary">Buy Now</button>
     </div>
   </div>
 </div>
 <div className="card w-96 bg-gradient-to-r from-purple-900 to-purple-300 shadow-xl">
-  <div className="card-body">
+  <div className="card-body flex-row">
+    <div>
     <h2 className="card-title">Spin and Win</h2>
-    <p>Spin the wheel of rewards and win big!</p>
-    <h4 className='bg-purple-600 '>SPIN THE WHEEL</h4>
+  
+  <p>Spin the wheel of rewards and win big!</p>
+   <h4 className='bg-purple-600 w-2/3'>SPIN THE WHEEL</h4>
+    </div>
+  
+  
     <div className="card-actions justify-end">
       <button className="btn btn-primary">Buy Now</button>
     </div>
+   
+   
   </div>
 </div>
 <div className="card w-96 bg-gradient-to-r from-purple-900 to-purple-300 shadow-xl">
-  <div className="card-body">
+  <div className="card-body flex-row">
+    <div>
     <h2 className="card-title">Challenges</h2>
     <p>Complete challenges to earn extra rewards.</p>
-    <h4 className='bg-purple-600 '>SEE CHALLENGES</h4>
+    <h4 className='bg-purple-600 w-2/3'>SEE CHALLENGES</h4>
+    </div>
+   
     <div className="card-actions justify-end">
       <button className="btn btn-primary">Buy Now</button>
     </div>
@@ -107,15 +121,29 @@ function App() {
   </div> 
   <div className="drawer-side">
     <label htmlFor="my-drawer" className="drawer-overlay"></label>
-    <ul className="menu p-4 w-80 bg-base-100 text-base-content">
-      
-      {/* <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li> */}
+    <ul className="menu p-4 w-80 bg-white text-base-content">
+      <li><div className="avatar">
+  <div className="w-24 rounded-full">
+    <img src={img} alt=''></img>
+  </div>
+</div></li>
+<li>muhibbulhasan6@gmail.com</li>
+      <li>Redeem</li>
+      <li>Tranctions</li>
+      <li>Invite a Friend</li>
+      <li>Rate US</li>
+      <li>Help & Support</li>
+      <li>Privacy Policy</li>
       
     </ul>
   </div>
 </div>
-     
+     <footer className='bg-fuchsia-800 p-4'>
+      <div>
+      <p>Footer</p>
+      </div>
+
+     </footer>
     </div>
   );
 }
